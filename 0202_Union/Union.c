@@ -6,7 +6,7 @@ void Union(SqList* La, SqList Lb) {
     ElemType e;
 
     La_len = ListLength(*La);
-    lb_len = ListLength(Lb);
+    Lb_len = ListLength(Lb);
 
     for(i = 1; i<= Lb_len; i++){
         GetElem(Lb, i, &e);

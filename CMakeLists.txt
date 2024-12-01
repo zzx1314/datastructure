@@ -5,5 +5,6 @@ set(CMAKE_C_STANDARD 90)
 
 add_subdirectory(Status)
 add_subdirectory(0201_SqList)
+add_subdirectory(0202_Union)
 
 add_subdirectory(0306_Hanoi)

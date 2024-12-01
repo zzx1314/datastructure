@@ -2,7 +2,7 @@
 #define SQLIST_H
 
 #include <stdio.h>
-#include <stdiolib.h> // malloc,realloc,free,exit
+#include <stdlib.h> // malloc,realloc,free,exit
 #include "Status.h"
 
 #define LIST_INIT_SIZE 100
@@ -16,7 +16,7 @@ typedef struct {
     int listsize;
 } SqList;
 // init
-Statue InitList(SqList* L);
+Status InitList(SqList* L);
 
 // get length
 int ListLength(SqList L);

@@ -44,7 +44,7 @@ int LocateElem(SqList L, ElemType e, Status(Compare)(ElemType, ElemType)) {
     }
 }
 
-Statue ListInsert(SqList* L, int i, ElemType e){
+Status ListInsert(SqList* L, int i, ElemType e){
     ElemType* newbase;
     ElemType* p, *q;
 
