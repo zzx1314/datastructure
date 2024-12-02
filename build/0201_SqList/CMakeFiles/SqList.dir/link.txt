@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/SqList.dir/SqList.c.o CMakeFiles/SqList.dir/SqList-main.c.o  -o SqList -rdynamic ../Status/libScanf_lib.a 

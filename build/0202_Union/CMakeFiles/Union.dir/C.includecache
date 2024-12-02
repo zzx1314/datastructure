@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Status/Status.h
+stdio.h
+-
+
+/root/zzx/datastructure/0202_Union/SqList.c
+SqList.h
+/root/zzx/datastructure/0202_Union/SqList.h
+
+/root/zzx/datastructure/0202_Union/SqList.h
+stdio.h
+-
+stdlib.h
+-
+Status.h
+/root/zzx/datastructure/0202_Union/Status.h
+
+/root/zzx/datastructure/0202_Union/Union-main.c
+stdio.h
+-
+Union.h
+/root/zzx/datastructure/0202_Union/Union.h
+SqList.h
+/root/zzx/datastructure/0202_Union/SqList.h
+
+/root/zzx/datastructure/0202_Union/Union.c
+Union.h
+/root/zzx/datastructure/0202_Union/Union.h
+
+/root/zzx/datastructure/0202_Union/Union.h
+stdio.h
+-
+Status.h
+/root/zzx/datastructure/0202_Union/Status.h
+SqList.h
+/root/zzx/datastructure/0202_Union/SqList.h
+

@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/Union.dir/SqList.c.o CMakeFiles/Union.dir/Union.c.o CMakeFiles/Union.dir/Union-main.c.o  -o Union -rdynamic ../Status/libScanf_lib.a 

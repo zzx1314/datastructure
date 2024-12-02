@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/zzx/datastructure/Status/Status.c
+stdio.h
+-
+Status.h
+/root/zzx/datastructure/Status/Status.h
+
+/root/zzx/datastructure/Status/Status.h
+stdio.h
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libScanf_lib.a  CMakeFiles/Scanf_lib.dir/Status.c.o
+/usr/bin/ranlib libScanf_lib.a
