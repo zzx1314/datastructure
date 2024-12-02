@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/Hanoi.dir/Hanoi.c.o CMakeFiles/Hanoi.dir/Hanoi-main.c.o  -o Hanoi -rdynamic ../Status/libScanf_lib.a 

@@ -1,5 +1,0 @@
-/root/zzx/datastructure/build/0306_Hanoi/CMakeFiles/Hanoi.dir
-/root/zzx/datastructure/build/0203_MergeSqList/CMakeFiles/MergeSqList.dir
-/root/zzx/datastructure/build/Status/CMakeFiles/Scanf_lib.dir
-/root/zzx/datastructure/build/0201_SqList/CMakeFiles/SqList.dir
-/root/zzx/datastructure/build/0202_Union/CMakeFiles/Union.dir

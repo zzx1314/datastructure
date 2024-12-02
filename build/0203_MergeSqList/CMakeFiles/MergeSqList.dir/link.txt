@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/MergeSqList.dir/SqList.c.o CMakeFiles/MergeSqList.dir/MergeSqList.c.o CMakeFiles/MergeSqList.dir/MergeSqList-main.c.o  -o MergeSqList -rdynamic ../Status/libScanf_lib.a 
