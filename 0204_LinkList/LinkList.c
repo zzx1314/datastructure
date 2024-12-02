@@ -137,4 +137,20 @@ Status PriorElem(LinkList L, ElemType cur_e, ElemType* pre_e) {
     return OK;
 }
 
-Status NextElem(LinkList L, ElemType )
+Status NextElem(LinkList L, ElemType cur_e, ElemTpe* next_e) {
+    LinkList pre;
+
+    if(L == NULL || L->next == NULL) {
+        return ERROR;
+    }
+    pre = L->next;
+    while(pre->next != NULL && pre->data != cur_e) {
+        pre = pre->next;
+    }
+    if(pre->next ==NULL) {
+        return ERROR;
+    }
+
+    *next_e = pre->next->data;
+    return OK;
+}
