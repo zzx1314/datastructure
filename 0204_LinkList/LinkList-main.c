@@ -19,11 +19,13 @@ int main(int argc, char** argv) {
         InitList(&L);
     }
     PressEnterToContinue(debug);
+    
     printf("ListEmpty \n");
     {
         ListEmpty(L)? printf("l is empty \n") : printf("l is not empty\n");
     }
     PressEnterToContinue(debug);
+    
     printf("ListInsert \n");
     {
         for(i = 1; i<=8; i++) {
@@ -32,12 +34,14 @@ int main(int argc, char** argv) {
         }
     }
     PressEnterToContinue(debug);
+    
     printf("ListTraverse \n");
     {
         printf("L = ");
         ListTraverse(L, PrintElem);
     }
     PressEnterToContinue(debug);
+    
     printf("ListDelete \n");
     {
         printf("delete before: L=");
@@ -51,18 +55,22 @@ int main(int argc, char** argv) {
         ListTraverse(L, PrintElem);
     }
     PressEnterToContinue(debug);
+    
     printf("GetElem\n");
     {
         GetElem(L, 4, &e);
         printf("in L is 4 is %d \n", e);
     }
     PressEnterToContinue(debug);
+    
     printf("LocateElem \n");
     {
         i = LocateElem(L, 7, CmpGreater);
         GetElem(L, i, &e);
         printf("the first element large than 7 is  %d\n", e);
     }
+    PressEnterToContinue(debug);
+    
     printf("PriorElem\n");
     {
         ElemType cur_e =6;
@@ -73,6 +81,7 @@ int main(int argc, char** argv) {
         }
     }
     PressEnterToContinue(debug);
+    
     printf("NextElem \n");
     {
         ElemType cur_e = 6;
@@ -83,6 +92,7 @@ int main(int argc, char** argv) {
         }
     }
     PressEnterToContinue(debug);
+   
     printf("ClearList \n");
     {
         printf("clear before:");
@@ -92,6 +102,7 @@ int main(int argc, char** argv) {
         ListEmpty(L) ? printf("L is empty\n") : printf("L is not empty \n");
     }
     PressEnterToContinue(debug);
+    
     printf("DestroyList \n");
     {
         printf("destroy L before");
