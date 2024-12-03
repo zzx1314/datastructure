@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     
     printf("ListInsert \n");
     {
-        for(i = 1; i<=8; i++) {
+        for(i=1; i<=8; i++) {
             printf("in L %d number insert %d \n", i, 2 * i);
             ListInsert(L, i, 2 * i);
         }
@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
     printf("GetElem\n");
     {
         GetElem(L, 4, &e);
-        printf("in L is 4 is %d \n", e);
+        printf("the fourth element is %d \n", e);
     }
     PressEnterToContinue(debug);
     
@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
     
     printf("PriorElem\n");
     {
-        ElemType cur_e =6;
+        ElemType cur_e = 6;
         if (PriorElem(L, cur_e, &e) == OK) {
             printf("element %d is prior is %d", cur_e, e);
         } else {

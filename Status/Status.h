@@ -22,6 +22,8 @@ typedef int Boolean;
 
 extern Boolean debug;
 
+int ReadData(FILE* fp, char* format, ...);
+
 /**
  * 按下回车继续
  */
@@ -31,5 +33,7 @@ void PressEnterToContinue(Boolean debug);
  * 函数暂停一段时间
  */
 void Wait(long time);
+
+void skipBlank(FILE* fp);
 
 #endif
