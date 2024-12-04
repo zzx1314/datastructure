@@ -1,4 +1,4 @@
-include_directories(${CMAKE_SOURCE_DIR/Status})
+include_directories(${CMAKE_SOURCE_DIR}/Status)
 
 add_executable(LinkedList LinkList.h LinkList.c LinkList-main.c)
 

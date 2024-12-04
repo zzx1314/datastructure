@@ -7,5 +7,6 @@ add_subdirectory(Status)
 add_subdirectory(0201_SqList)
 add_subdirectory(0202_Union)
 add_subdirectory(0203_MergeSqList)
+add_subdirectory(0204_LinkList)
 
 add_subdirectory(0306_Hanoi)

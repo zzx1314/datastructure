@@ -1,7 +1,7 @@
 #include "LinkList.h"
 
 Status InitList(LinkList* L) {
-  (*L) = (LinkList) makkoc(sizeof(LNode));
+  (*L) = (LinkList) malloc(sizeof(LNode));
   if(*L == NULL) {
       exit(OVERFLOW);
   }
@@ -94,7 +94,7 @@ int LocateElem(LinkList L, ElemType e, Status(Compare)(ElemType, ElemType)) {
     int i;
     LinkList p;
 
-    if(L == NULL || L.next == NULL) {
+    if(L == NULL || L->next == NULL) {
         return 0;
     }
     i = 1;
@@ -137,7 +137,7 @@ Status PriorElem(LinkList L, ElemType cur_e, ElemType* pre_e) {
     return OK;
 }
 
-Status NextElem(LinkList L, ElemType cur_e, ElemTpe* next_e) {
+Status NextElem(LinkList L, ElemType cur_e, ElemType* next_e) {
     LinkList pre;
 
     if(L == NULL || L->next == NULL) {
@@ -182,8 +182,9 @@ Status ListInsert(LinkList L, int i, ElemType e){
     return OK;
 }
 
-Status ListDelete(LinkList L, int i, ElemType e){
+Status ListDelete(LinkList L, int i, ElemType *e){
     LinkList p, q;
+    int j;
 
     if(L == NULL || L->next == NULL){
         return ERROR;
@@ -192,7 +193,7 @@ Status ListDelete(LinkList L, int i, ElemType e){
     j = 0;
 
     while(p ->next != NULL && j < i-1) {
-        p = p-next;
+        p = p->next;
         ++j;
     }
     if(p->next == NULL || j> i-1){
@@ -206,12 +207,12 @@ Status ListDelete(LinkList L, int i, ElemType e){
 }
 
 void ListTraverse(LinkList L, void(Visit)(ElemType)) {
-    ListList p;
+    LinkList p;
     if(L == NULL || L->next == NULL) {
         return;
     }
     p = L->next;
-    while(p != null) {
+    while(p != NULL) {
         Visit(p->data);
         p = p->next;
     }
@@ -276,7 +277,7 @@ Status CreateList_Tail(LinkList* L, int n, char* path){
         }
         *L = (LinkList) malloc(sizeof(LNode));
         (*L)->next = NULL;
-        for (i = 1, q = *L, i <= n; ++i) {
+        for (i = 1, q = *L; i <= n; ++i) {
             p = (LinkList) malloc(sizeof(LNode));
             ReadData(fp, "%d", &(p->data));
             q->next = p;

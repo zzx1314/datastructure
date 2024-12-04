@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <Status.h>
-#include <LinkList.h>
+#include "LinkList.h"
 
 Status CmpGreater(ElemType data, ElemType e) {
     return data > e ? TRUE : FALSE;
@@ -125,8 +125,8 @@ int main(int argc, char** argv) {
     printf("CreateList_Tail \n");
     {
         LinkList L;
-        CreateList_taril(&L, 5, "TestData_tail.txt");
-        printf("taril create list L= ");
+        CreateList_Tail(&L, 5, "TestData_Tail.txt");
+        printf("taril insert list is L= ");
         ListTraverse(L, PrintElem);
     }
     PressEnterToContinue(debug);

@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include <string.h>
+#include <stdarg.h> // 提供宏va_list、va_start、va_arg、va_end
+#include <ctype.h>  // 提供isprint原型
 #include "Status.h"
 
 Boolean debug = FALSE;
