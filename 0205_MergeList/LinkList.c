@@ -15,8 +15,8 @@ void ListTraverse(LinkList L, void(Visit)(ElemType)) {
 
 Status CreateList_Head(LinkList* L,int n, char* path) {
     int i;
-    LinkList = p;
-    FILE* = fp;
+    LinkList p;
+    FILE* fp;
     int readFromConsole;
 
     readFromConsole = path == NULL || strcmp(path, "") == 0;

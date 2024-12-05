@@ -2,14 +2,14 @@
 #include "MergeList.h"
 
 void PrintElem(ElemType e) {
-    printf("%d", e);
+    printf("%d ", e);
 }
 
 int main(int argc, char** argv) {
     LinkList La, Lb, Lc;
     int n = 5;
     
-    printf("La length is %d, Lb length is %d", n, n);
+    printf("La length is %d, Lb length is %d \n", n, n);
     
     CreateList_Head(&La, n, "TestData_Head.txt");
     printf("La ==");
