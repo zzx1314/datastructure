@@ -180,13 +180,12 @@ Status NextElem(SLinkList space, int S, ElemType cur_e, ElemType* next_e) {
         pre = space[pre].cur;
     }
 
-    if(space[pre].cur = 0) {
+    if(space[pre].cur == 0) {
         return ERROR;
     }
 
     *next_e = space[space[pre].cur].data;
 
-    PrintList(space, S);
     return OK;
 }
 

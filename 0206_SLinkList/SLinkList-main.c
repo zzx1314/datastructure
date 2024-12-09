@@ -98,8 +98,6 @@ int main(int argc, char** argv) {
     {
         ElemType cur_e = 6;
         
-        ListTraverse(space, S, PrintElem);
-        
         if(NextElem(space, S, cur_e, &e) == OK) {
             printf("elem %d next is %d \n", cur_e, e);
         } else {
