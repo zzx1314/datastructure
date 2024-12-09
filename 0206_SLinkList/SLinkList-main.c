@@ -7,7 +7,7 @@ Status CmpGreater(ElemType data, ElemType e) {
 }
 
 void PrintElem(ElemType e) {
-    printf("%d", e);
+    printf("%d ", e);
 }
 
 int main(int argc, char** argv) {
@@ -57,11 +57,11 @@ int main(int argc, char** argv) {
 
         printf("delete S frist 6 elem \n");
 
-        if(ListDelete(space, S, 6, &e) == OK) {
+       /* if(ListDelete(space, S, 6, &e) == OK) {
             printf("delete sucess, delete is %d", e);
         } else {
             printf("delete fail, 6 elem is not exist");
-        }
+        }*/
 
         printf("delete after: S=");
         ListTraverse(space, S, PrintElem);
@@ -97,7 +97,10 @@ int main(int argc, char** argv) {
     printf("NextElem \n");
     {
         ElemType cur_e = 6;
-        if(NextElem(space, S, cur_e, &e) == Ok) {
+        
+        ListTraverse(space, S, PrintElem);
+        
+        if(NextElem(space, S, cur_e, &e) == OK) {
             printf("elem %d next is %d \n", cur_e, e);
         } else {
             printf("elem %d next is not exist\n", cur_e);
@@ -117,15 +120,15 @@ int main(int argc, char** argv) {
     }
     PressEnterToContinue(debug);
 
-    printf("DestoryList \n");
+    printf("DestroyList \n");
     {
-        printf("desotry S before\n");
-        S != 0 ? printf("S exist\n") : printf("S is not exist");
+        printf("destroy S before\n");
+        S != 0 ? printf("S exist\n") : printf("S is not exist \n");
 
-        DestoryList(space, &S);
+        DestroyList(space, &S);
 
-        printf("destory S after:");
-        S != 0 ? printf("S is exist\n") : printf("S is not exist");
+        printf("destroy S after:\n");
+        S != 0 ? printf("S is exist\n") : printf("S is not exist\n");
     }
     return 0;
 

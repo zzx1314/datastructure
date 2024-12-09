@@ -119,7 +119,7 @@ Status GetElem(SLinkList space, int S, int i, ElemType* e) {
     return OK;
 }
 
-int LocateElem(SLinkList space, int S, ElemType e, Status(Compare)(ElemType, ElemTyep)) {
+int LocateElem(SLinkList space, int S, ElemType e, Status(Compare)(ElemType, ElemType)) {
     int i;
     int p;
 
@@ -177,7 +177,7 @@ Status NextElem(SLinkList space, int S, ElemType cur_e, ElemType* next_e) {
     pre = space[S].cur;
 
     while(space[pre].cur != 0 && space[pre].data != cur_e) {
-        pre = spce[pre].cur;
+        pre = space[pre].cur;
     }
 
     if(space[pre].cur = 0) {
@@ -185,6 +185,8 @@ Status NextElem(SLinkList space, int S, ElemType cur_e, ElemType* next_e) {
     }
 
     *next_e = space[space[pre].cur].data;
+
+    PrintList(space, S);
     return OK;
 }
 

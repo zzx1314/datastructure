@@ -7,7 +7,7 @@
 
 #define MAXSIZE 1000
 
-typedef int ElemType
+typedef int ElemType;
 
 typedef struct SLinkNode {
     ElemType data;
@@ -33,7 +33,7 @@ int ListLength(SLinkList space, int S);
 
 Status GetElem(SLinkList space, int S, int i, ElemType* e);
 
-int LocateElem(SLinkList space, int S, Status(Compare)(ElemType, ElemType));
+int LocateElem(SLinkList space, int S, ElemType e, Status(Compare)(ElemType, ElemType));
 
 Status PriorElem(SLinkList space, int S, ElemType cur_e, ElemType* pre_e);
 
