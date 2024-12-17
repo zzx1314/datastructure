@@ -81,7 +81,7 @@ void difference(SLinkList space, int* S, char* path) {
         R = i;
     }
 
-    PrintList(space, R);
+    PrintList(space, *S);
     
     // 尾结点的指针置空
     space[R].cur = 0;
