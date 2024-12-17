@@ -1,4 +1,4 @@
-include_directories(${CMAKE_SOURCE_DIR}/Status);
+include_directories(${CMAKE_SOURCE_DIR}/Status)
 
 add_executable(Difference SLinkList.h SLinkList.c Difference.h Difference.c Difference-main.c)
 
